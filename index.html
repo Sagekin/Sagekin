@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Hi, I'm OKORO CHIBUEZE</h1>
+    <p>Frontend Developer</p>
+    <button id="darkModeToggle" aria-label="Toggle Dark Mode">  🌙  </button>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#techstack">Tech Stack</a>
+      <a href="#about">About Me</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>jambquestion.netlify.app</h3><a href="https://jambquestion.netlify.app">jambquestion.netlify.app</a>
+      <p>An educational web app that does amazing things using Html, Css and JavaScript.</p>
+    </div>
+    <div class="project">
+      <h3>y1mate.netlify.app</h3><a href="https://y1mate.netlify.app">y1mate.netlify.app</a>
+      <p>Mobile-friendly YouTube alternative site built with Html, Css and JavaScript.</p>
+    </div>
+  </section>
+
+  <section id="techstack">
+    <h2>Tech Stack</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>Git & GitHub</li>
+      <li>Graphic Designer</li>
+    </ul>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a self-taught developer with a passion for building efficient, scalable web applications. I love clean code and learning new technologies.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+<form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+  <input type="hidden" name="form-name" value="contact">
+  
+  <!-- Honeypot for spam bots -->
+  <div style="display:none">
+    <label>Don’t fill this out: <input name="bot-field" /></label>
+  </div>
+
+  <label for="name">Name:</label>
+  <input id="name" name="name" type="text" required />
+
+  <label for="email">Email:</label>
+  <input id="email" name="email" type="email" required />
+
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" rows="5" required></textarea>
+
+  <button type="submit" class="btn">Send</button>
+</form>
+
+
+  </section>
+<script src="script.js"></script>
+  <footer>
+    <p>&copy; 2025 Okoro Chibueze</p>
+  </footer>
+
+</body>
+</html>

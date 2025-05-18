@@ -1,0 +1,206 @@
+:root {
+  --primary-color: #4a90e2;
+  --background-light: #f9f9f9;
+  --text-light: #333;
+  --background-dark: #121212;
+  --text-dark: #eee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10px;
+  background: var(--background-light);
+  color: var(--text-light);
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  background: var(--primary-color);
+  padding: 2rem 2rem 2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2.2rem;
+  margin: 10px;
+  padding: 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+#darkModeToggle {
+  background: none;
+  border: none;
+  Padding:1rem;
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.section {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.landing {
+  text-align: center;
+  padding-top: 6rem;
+}
+
+.landing h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.4rem;
+}
+
+.landing p {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.btn {
+  background: var(--primary-color);
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #3b7dc4;
+}
+
+.projects .project-list {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  padding: 1.2rem;
+  border-radius: 6px;
+  background: white;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+}
+
+.project-card a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+.tech-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-weight: 600;
+}
+
+.tech-list li {
+  background: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.about p {
+  max-width: 700px;
+  margin-bottom: 1rem;
+}
+
+form {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+label {
+  font-weight: 600;
+}
+
+input, textarea {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background: #eee;
+  margin-top: 3rem;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background: var(--background-dark);
+  color: var(--text-dark);
+}
+
+body.dark-mode header {
+  background: #222;
+}
+
+body.dark-mode .project-card {
+  background: #1e1e1e;
+  border-color: #444;
+  box-shadow: none;
+}
+
+body.dark-mode .btn {
+  background: var(--primary-color);
+}
+
+body.dark-mode .tech-list li {
+  background: #4a90e2;
+}
+
+body.dark-mode footer {
+  background: #222;
+  color: var(--text-dark);
+}
